@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, GlobalStyle, lightTheme } from './index.style.js';
 import { useDarkMode } from "./components/useDarkMode";
 import ReactPlayer from 'react-player/youtube'
+import playIcon from "../src/assets/images/play-icon.webp";
 import Navigation from "./components/Navigation";
 import Faq from "./components/Faq";
 
@@ -36,6 +37,7 @@ const App = () => {
               light={mesheryPlayground}
               width="90%"
               style={{ margin: "auto" }}
+              playIcon={<img src={playIcon} className = "playBtn" loading="lazy"/>}
               className="embedVideo"
             />
             <p className="caption">Launch and learn with Meshery</p>

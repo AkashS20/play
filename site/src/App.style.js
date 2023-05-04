@@ -263,6 +263,14 @@ export const Main = styled.main`
     margin: 4rem auto 0rem auto;
   }
 
+  .playBtn {
+    position: absolute;
+    border-radius: 50%;
+  }
+  .embedVideo:hover .playBtn { 
+      box-shadow: 0px 0px 16px 3px #00B39F;
+  }
+
   @media screen and (max-width: 768px) {
     figure {
       width: 90%;
